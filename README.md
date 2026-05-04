@@ -6,6 +6,8 @@ Predicting which higher-education students are at risk of dropping out, using on
 
 [**View the interactive dashboard on Tableau Public**](https://public.tableau.com/views/StudentDropoutEarly-WarningDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+![Student Dropout Early-Warning Dashboard](dashboard_screenshot.png)
+
 ## Why This Project
 
 Higher education institutions invest heavily in retention. The earlier a struggling student is identified, the more time advisors and faculty have to intervene. This project builds a data-driven early-warning system that flags at-risk students based on demographics, prior education, financial indicators, and first/second-semester academic performance.
@@ -55,11 +57,12 @@ Random Forest was selected as the final model for its balance of performance and
 
 ```
 student-dropout-prediction/
-├── 01_eda.ipynb              # Exploratory data analysis
-├── 02_modeling.ipynb         # Model training and evaluation
+├── 01_eda.ipynb                          # Exploratory data analysis
+├── 02_modeling.ipynb                     # Model training and evaluation
 ├── outputs/
 │   ├── feature_importance_for_tableau.csv
-│   └── test_predictions_for_tableau.csv
+│   ├── test_predictions_for_tableau.csv
+│   └── dashboard_screenshot.png          # Tableau dashboard preview
 └── README.md
 ```
 
