@@ -6,7 +6,7 @@ Predicting which higher-education students are at risk of dropping out, using on
 
 [**View the interactive dashboard on Tableau Public**](https://public.tableau.com/views/StudentDropoutEarly-WarningDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Student Dropout Early-Warning Dashboard](dashboard_screenshot.png)
+![Student Dropout Early-Warning Dashboard](outputs/dashboard_screenshot.png)
 
 ## Why This Project
 
@@ -57,12 +57,19 @@ Random Forest was selected as the final model for its balance of performance and
 
 ```
 student-dropout-prediction/
-├── 01_eda.ipynb                          # Exploratory data analysis
-├── 02_modeling.ipynb                     # Model training and evaluation
+├── 01_eda.ipynb                              # Exploratory data analysis
+├── 02_modeling.ipynb                         # Model training and evaluation
+├── data/
+│   ├── raw_students.csv                      # Original UCI dataset
+│   └── students_cleaned.csv                  # Cleaned data with engineered features
 ├── outputs/
-│   ├── feature_importance_for_tableau.csv
-│   ├── test_predictions_for_tableau.csv
-│   └── dashboard_screenshot.png          # Tableau dashboard preview
+│   ├── confusion_matrix.png                  # RF classification results
+│   ├── roc_curves.png                        # Model comparison curves
+│   ├── feature_importance.png                # Top predictors visualization
+│   ├── feature_importance_for_tableau.csv    # Dashboard input
+│   ├── test_predictions_for_tableau.csv      # Dashboard input
+│   └── dashboard_screenshot.png              # Tableau dashboard preview
+├── .gitignore
 └── README.md
 ```
 
